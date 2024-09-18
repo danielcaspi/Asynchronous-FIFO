@@ -23,4 +23,8 @@ data_in -> dat_out table for first few data.
 
 ![image](https://github.com/user-attachments/assets/6932de41-0e15-48f8-a439-3c996ccaeed5)
 
+example for uf_test:
+
+![image](https://github.com/user-attachments/assets/1ca1f66c-d48e-44f4-aae8-11df668a91cc)
+
 
