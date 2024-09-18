@@ -13,3 +13,14 @@ Read Control,
 Write Control,
 Synchronizer, 
 Gray code conversion in both directions. 
+
+
+simulation:
+
+![image](https://github.com/user-attachments/assets/09064f71-072c-4f65-bd83-771dcfb5e04f)
+
+data_in -> dat_out table for first few data.
+
+![image](https://github.com/user-attachments/assets/6932de41-0e15-48f8-a439-3c996ccaeed5)
+
+
