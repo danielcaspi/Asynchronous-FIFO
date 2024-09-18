@@ -15,16 +15,16 @@ Synchronizer,
 Gray code conversion in both directions. 
 
 
-simulation:
+Simulation:
 
 ![image](https://github.com/user-attachments/assets/c49d3992-600d-4ab0-8b43-2933d04397f2)
 
 
-data_in -> dat_out table for first few data.
+Data_in -> Data_out table for first few data.
 
 ![image](https://github.com/user-attachments/assets/6932de41-0e15-48f8-a439-3c996ccaeed5)
 
-example for UF_test:
+Example for UF_test:
 
 ![image](https://github.com/user-attachments/assets/1ca1f66c-d48e-44f4-aae8-11df668a91cc)
 
