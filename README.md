@@ -10,6 +10,9 @@ RTL Design Modules:
 
 Memory.
 Read Control.
+
 Write Control.
+
 Synchronizer.
+
 Gray code conversion in both directions.
