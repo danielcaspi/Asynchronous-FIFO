@@ -17,7 +17,8 @@ Gray code conversion in both directions.
 
 simulation:
 
-![image](https://github.com/user-attachments/assets/09064f71-072c-4f65-bd83-771dcfb5e04f)
+![image](https://github.com/user-attachments/assets/c49d3992-600d-4ab0-8b43-2933d04397f2)
+
 
 data_in -> dat_out table for first few data.
 
