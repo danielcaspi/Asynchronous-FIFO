@@ -5,12 +5,12 @@ module syncronaizer(
                         input in_clk,
                         input out_clk,
                         input reset_n,
-                        input [3:0] data_in,
-                        output [3:0] data_out
+                        input [4:0] data_in,
+                        output [4:0] data_out
     );
-reg [3:0] data_in_reg;    
-reg [3:0] data_out_reg;    
-reg [3:0] data_tmp_reg;    
+reg [4:0] data_in_reg;    
+reg [4:0] data_out_reg;    
+reg [4:0] data_tmp_reg;    
 assign data_out =  data_out_reg;
   
 always@(posedge in_clk or negedge reset_n) // clk_in
@@ -23,8 +23,8 @@ always@(posedge in_clk or negedge reset_n) // clk_in
 always@(posedge out_clk or negedge reset_n) // clk_out
     if(!reset_n)
     begin
-        data_tmp_reg <=4'b0;
-        data_out_reg <= 4'b0;
+        data_tmp_reg <=5'b0;
+        data_out_reg <= 5'b0;
     end
     else
     begin
