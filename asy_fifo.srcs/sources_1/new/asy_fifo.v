@@ -17,14 +17,14 @@ module asy_fifo(
  
  wire mem_read;  //from control to mem rd
  wire mem_write; //from control to mem wr
- wire [3:0] mem_ptr_read; // from read control to mem
- wire [3:0] mem_ptr_write; // from write control to mem
- wire [3:0]gray_into_syc_write; // befor syc write
- wire [3:0]gray_out_syc_write;  // after syc write
- wire [3:0]gray_into_syc_read;  // befor syc write
- wire [3:0]gray_out_syc_read;   // after syc write
- wire [3:0]read_ptr_to_wr_control;
- wire [3:0]write_ptr_to_rd_control;
+ wire [4:0] mem_ptr_read; // from read control to mem
+ wire [4:0] mem_ptr_write; // from write control to mem
+ wire [4:0]gray_into_syc_write; // befor syc write
+ wire [4:0]gray_out_syc_write;  // after syc write
+ wire [4:0]gray_into_syc_read;  // befor syc write
+ wire [4:0]gray_out_syc_read;   // after syc write
+ wire [4:0]read_ptr_to_wr_control;
+ wire [4:0]write_ptr_to_rd_control;
                    
 mem32x16 mem32x16_m(
                       .data_in(data_in_i),        
