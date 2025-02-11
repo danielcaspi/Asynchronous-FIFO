@@ -8,12 +8,16 @@ reg clk_write_i;
 reg clk_read_i;        
 reg write_req_i;       
 reg read_req_i;        
-reg [31:0] data_in_i;  
-wire [31:0] data_out_o;
+reg [31:0] data_in_i = 32'h00000000  ;
+wire [31:0] data_out_o ;
 wire empty_o;          
 wire full_o;
 wire uf_i;
-wire of_i;            
+wire of_i;   
+
+reg [31:0] data_in_mem[1023:0] ;    // for test
+reg [31:0] data_out_mem [1023:0];         
+integer i;     
 
 asy_fifo asy_fifo_test(
                        .reset_i(reset_i),           
@@ -133,12 +137,17 @@ begin
 #end_time
     $fclose(data_in_file_open);
     $fclose(data_out_file_open);   
+    $readmemh("data_in_file.txt",data_in_mem);
+    $readmemh("data_out_file.txt",data_out_mem);
+
+    for ( i = 0; i < (number -1); i=i+1)
+    begin
+        if(data_in_mem[i] !== data_out_mem[i+1])
+            $display(" Errorr, wrong transaction,test fail, number: %d , write = %h , read = %h",i,data_in_mem[i],data_out_mem[i+1]);
+        else
+            $display("test pass ,number: %d , write = %h , read = %h",i,data_in_mem[i],data_out_mem[i+1] );
+    end
 end
-
-
-
-
-
 
 
 endmodule
